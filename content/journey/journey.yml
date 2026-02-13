@@ -1,0 +1,13 @@
+stages:
+  - name: "Awakening"
+    slug: "awakening"
+    lessons:
+      - slug: "pause-and-see"
+        title: "Pause and See"
+      - slug: "from-reaction-to-response"
+        title: "From Reaction to Response"
+  - name: "Alignment"
+    slug: "alignment"
+    lessons:
+      - slug: "choose-the-next-right-step"
+        title: "Choose the Next Right Step"
