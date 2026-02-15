@@ -1,9 +1,13 @@
 export default function Home() {
   return (
     <main style={{ padding: 40, fontFamily: "system-ui" }}>
-      <h1 style={{ fontSize: 42, marginBottom: 12 }}>Kabbalah Guy</h1>
+      <h1 style={{ fontSize: 42, marginBottom: 12 }}>
+        Kabbalah Guy
+      </h1>
+
       <p style={{ fontSize: 18, maxWidth: 700 }}>
-        Practical Kabbalah for daily life. Your Journey Map is coming next.
+        Practical Kabbalah for daily life. Learn timeless spiritual principles
+        and apply them today.
       </p>
 
       <div style={{ marginTop: 24 }}>
@@ -12,7 +16,7 @@ export default function Home() {
           style={{
             display: "inline-block",
             padding: "12px 18px",
-            borderRadius: 10,
+            borderRadius: 8,
             background: "black",
             color: "white",
             textDecoration: "none",
