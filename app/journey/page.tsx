@@ -1,5 +1,7 @@
 export default function JourneyPage() {
   return (
+    <div>
+      <h1>Journey</h1>
     <main className="max-w-3xl mx-auto px-6 py-16">
       <h1 className="text-4xl font-bold mb-6">
         The Kabbalah Journey
