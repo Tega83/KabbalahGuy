@@ -30,43 +30,28 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <nav className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center h-16">
-              <Link href="/" className="font-bold text-xl text-gray-900">
-                Kabbalah Guy
-              </Link>
-              <div className="flex gap-8">
-                <Link href="/" className="text-gray-700 hover:text-gray-900 transition">
-                  Home
-                </Link>
-                <Link href="/journey" className="text-gray-700 hover:text-gray-900 transition">
-                  Journey
-                </Link>
-                <Link href="/subscribe" className="text-gray-700 hover:text-gray-900 transition">
-                  Subscribe
-                </Link>
-                <Link href="/about" className="text-gray-700 hover:text-gray-900 transition">
-                  About
-                </Link>
-              </div>
-            </div>
-          </div>
-        </nav>
+<body>
+  <header className="border-b">
+    <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" className="font-semibold">
+        Kabbalah Guy
+      </a>
 
-        <main className="min-h-screen">{children}</main>
+      <nav className="flex gap-4 text-sm">
+        <a href="/journey" className="hover:underline">
+          Journey
+        </a>
+        <a href="/subscribe" className="hover:underline">
+          Daily Tip
+        </a>
+      </nav>
+    </div>
+  </header>
 
-        <footer className="bg-gray-50 border-t border-gray-200 mt-16">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <p className="text-gray-600 text-sm">
-              © {new Date().getFullYear()} Kabbalah Guy. All rights reserved.
-            </p>
-          </div>
-        </footer>
-      </body>
+  <div className="max-w-4xl mx-auto px-6 py-10">
+    {children}
+  </div>
+</body>
     </html>
   );
 }
